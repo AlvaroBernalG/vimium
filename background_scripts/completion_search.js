@@ -95,6 +95,7 @@ const CompletionSearch = {
   // synchronously.
   //
   complete(searchUrl, queryTerms, callback = null) {
+    console.log(searchUrl, queryTerms, callback);
     let handler;
     const query = queryTerms.join(" ").toLowerCase();
 
